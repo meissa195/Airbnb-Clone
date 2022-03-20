@@ -31,7 +31,7 @@ function Home() {
            
        </div>
        <div className="home__section">
-       <Card 
+            <Card 
             src = {photo4}
             title= "Title"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, explicabo."

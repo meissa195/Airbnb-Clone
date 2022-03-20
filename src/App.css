@@ -75,11 +75,12 @@
   color: #ff7779;
 }
 /* Search */
-.search{
+.search {
   position: absolute;
   top: 35px;
   left: 25%;
   width: 100vw;
+  z-index: 100;
 }
 .search > h2 {
   display: flex;
@@ -102,7 +103,7 @@
 }
 .search > input:focus {
   outline-width: 0;
-} 
+}
 .search > button {
   position: absolute;
   left: 0;
@@ -112,6 +113,7 @@
   color: white;
   width: 579px;
   font-weight: bold;
+  z-index: 100;
 }
 .search > button:hover,
 .serach > button:focus {
@@ -119,7 +121,7 @@
   font-weight: bold;
 }
 /* search button */
-.banner__search{
+.banner__search {
   /* top: 0; */
   display: flex;
   flex-direction: column;
@@ -138,12 +140,12 @@
   display: flex;
   padding: 30px;
 }
-.card{
+.card {
   margin: 10px;
   border: 0px solid black;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   transition: transform 100ms ease-in;
   cursor: pointer;
 }
@@ -162,11 +164,11 @@
   padding: 20px;
   border: 1;
 }
-.card__info > h2{
+.card__info > h2 {
   font-size: 18px;
   font-weight: 600;
 }
-.card__info > h4{
+.card__info > h4 {
   font-size: 14px;
   font-weight: 300;
   margin: 8px 0;
@@ -183,4 +185,85 @@
 footer > p {
   padding: 5px;
   font-size: 14px;
+}
+
+/* Search Page */
+.searchPage__info {
+  padding: 20px;
+}
+.searchPage__info > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.searchPage__info > h1 {
+  margin-bottom: 30px;
+}
+.searchPage__info > button {
+  border-radius: 30px;
+  text-transform: inherit;
+  margin: 5px;
+}
+
+/* Search Result */
+.searchResult {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.sera:hover {
+  opacity: 0.8;
+}
+.searchResult > img {
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+}
+.searchResult >img:hover,
+.searchResult > img:focus {
+  opacity: 0.8;
+}
+.searchResult__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.searchResult__heart {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+.searchResult__infoTop {
+  width: 40vw;
+}
+.searchResult__infoTop > h3 {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.searchResult__infoTop > p {
+  margin-top: 10px; 
+  font-size: 13px;
+  color: gray;
+}
+.searchResult__infoBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.searchResult__star {
+  color: red;
+}
+.searchResult__stars {
+  display: flex;
+  align-items: center;
+}
+.searchResult__price  {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+.searchResult__price > p {
+  text-align: right;
 }
